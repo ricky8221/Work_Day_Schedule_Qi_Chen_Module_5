@@ -1,9 +1,10 @@
-## Work Day Scheduler 
+# Work Day Scheduler 
 
-# This is a day schedule application with the past time with grey color, presennt time with red color, future time with grenn color feature,
-# and all the saved item will store on localstorage and print it in the reminder box while login.
+## This is a day schedule application with the past time with grey color, presennt time with red color, future time with grenn color feature,
+## and all the saved item will store on localstorage and print it in the reminder box while login.
 
-# Acceptance Criteria
+Acceptance Criteria:
+
 GIVEN I am using a daily planner to create a schedule
 WHEN I open the planner
 THEN the current day is displayed at the top of the calendar
