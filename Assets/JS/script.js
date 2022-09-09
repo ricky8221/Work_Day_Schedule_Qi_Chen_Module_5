@@ -17,26 +17,30 @@ $(".saveBtn").on('click', function(){
 
 function hrUpdate(){
 
-    var currentHour = moment().hour();
+    var currentHour = parseInt(moment().format('H'));
+    
 
     $('.time-block').each(function(){
 
-        var blockHour = parseInt($(this).attr("id")).split('-')
+        var blockHour = $(this).attr("id");
         if(blockHour < currentHour){
-            $(this).addClass("pass");
+            $(this).addClass("past");
         }
-        else if(blockHour === currentHour){
+        else if(blockHour == currentHour){
             $(this).removeClass('past');
             $(this).addClass('present');
         }
         else{
-            $(this).removeClass('pass');
+            $(this).removeClass('past');
             $(this).removeClass('present');
             $(this).addClass('future');
         }
 
     })
 }
+
+
+
 
 hrUpdate()
 
